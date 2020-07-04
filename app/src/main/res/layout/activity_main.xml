@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
 
@@ -26,9 +25,9 @@
 
 
     <LinearLayout
-        android:id="@+id/BtnsActionsVertical"
+        android:id="@+id/firstColumnBtnsActions"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/textViewValues"
         android:layout_alignParentEnd="true"
         android:orientation="vertical"
@@ -42,7 +41,7 @@
             android:text="@string/btn_action_division"
             android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_actions_background"/>
 
         <Button
@@ -53,7 +52,7 @@
             android:text="@string/btn_action_multiplication"
             android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_actions_background"/>
 
         <Button
@@ -64,7 +63,7 @@
             android:text="@string/btn_action_subtraction"
             android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_actions_background"/>
 
         <Button
@@ -75,7 +74,7 @@
             android:text="@string/btn_action_addition"
             android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_actions_background"/>
 
         <Button
@@ -86,27 +85,27 @@
             android:text="@string/btn_action_equally"
             android:textColor="@android:color/white"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_actions_background"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/BtnsActionsHorizontal"
+        android:id="@+id/firstRowBtnsActions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewValues"
-        android:layout_toStartOf="@id/BtnsActionsVertical"
+        android:layout_toStartOf="@id/firstColumnBtnsActions"
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/btnReset"
+            android:id="@+id/btnActionReset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_action_reset"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background" />
 
         <Button
@@ -116,7 +115,7 @@
             android:layout_weight="1"
             android:text="@string/btn_action_change_of_sign"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background" />
 
         <Button
@@ -126,16 +125,16 @@
             android:layout_weight="1"
             android:text="@string/btn_action_percent"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/firstRowBtns"
+        android:id="@+id/firstRowBtnsNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/BtnsActionsHorizontal"
-        android:layout_toStartOf="@id/BtnsActionsVertical"
+        android:layout_below="@id/firstRowBtnsActions"
+        android:layout_toStartOf="@id/firstColumnBtnsActions"
         android:orientation="horizontal" >
 
         <Button
@@ -145,7 +144,7 @@
             android:layout_weight="1"
             android:text="@string/btn_seven"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background" />
 
         <Button
@@ -155,7 +154,7 @@
             android:layout_weight="1"
             android:text="@string/btn_eight"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background" />
 
         <Button
@@ -165,16 +164,16 @@
             android:layout_weight="1"
             android:text="@string/btn_nine"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/secondRowBtns"
+        android:id="@+id/secondRowBtnsNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/firstRowBtns"
-        android:layout_toStartOf="@id/BtnsActionsVertical"
+        android:layout_below="@id/firstRowBtnsNumbers"
+        android:layout_toStartOf="@id/firstColumnBtnsActions"
         android:orientation="horizontal" >
 
         <Button
@@ -184,7 +183,7 @@
             android:layout_weight="1"
             android:text="@string/btn_four"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
         <Button
@@ -194,7 +193,7 @@
             android:layout_weight="1"
             android:text="@string/btn_five"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
         <Button
@@ -204,17 +203,17 @@
             android:layout_weight="1"
             android:text="@string/btn_six"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/thirdRowBtns"
+        android:id="@+id/thirdRowBtnsNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/secondRowBtns"
-        android:layout_toStartOf="@id/BtnsActionsVertical"
+        android:layout_below="@id/secondRowBtnsNumbers"
+        android:layout_toStartOf="@id/firstColumnBtnsActions"
         android:orientation="horizontal" >
 
         <Button
@@ -224,7 +223,7 @@
             android:layout_weight="1"
             android:text="@string/btn_one"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
         <Button
@@ -234,7 +233,7 @@
             android:layout_weight="1"
             android:text="@string/btn_two"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
         <Button
@@ -244,17 +243,17 @@
             android:layout_weight="1"
             android:text="@string/btn_three"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lustRowBtns"
+        android:id="@+id/lustRowBtnsNumbers"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/thirdRowBtns"
-        android:layout_toStartOf="@id/BtnsActionsVertical"
+        android:layout_height="match_parent"
+        android:layout_below="@id/thirdRowBtnsNumbers"
+        android:layout_toStartOf="@id/firstColumnBtnsActions"
         android:orientation="horizontal" >
 
         <Button
@@ -264,17 +263,17 @@
             android:layout_weight="1"
             android:text="@string/btn_zero"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
         <Button
-            android:id="@+id/btnDot"
+            android:id="@+id/btnPoint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="@string/btn_dot"
+            android:text="@string/btn_point"
             android:textSize="40sp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:background="@drawable/btn_numbers_background"/>
 
     </LinearLayout>

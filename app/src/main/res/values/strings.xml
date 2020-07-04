@@ -11,10 +11,11 @@
     <string name="btn_one">1</string>
     <string name="btn_two">2</string>
     <string name="btn_three">3</string>
-    <string name="btn_dot">\u002E</string>
+    <string name="btn_point">\u002E</string>
     <string name="btn_zero">0</string>
     <string name="too_many_characters">Слишком много символов!</string>
     <string name="btn_action_reset">\u0043</string>
+    <string name="text_view_action_reset">""</string>
     <string name="btn_action_change_of_sign">\u00B1</string>
     <string name="btn_action_percent">\u0025</string>
     <string name="btn_action_division">\u00F7</string>
